@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bio do Chenfer</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="background-container">
+    <img src="fundo.gif" alt="Fundo" class="gif-background">
+  </div>
+
+  <div class="card" id="card">
+    <div class="bio-content">
+      <div class="profile-container">
+        <img src="eu.jpg" alt="Foto de Perfil" class="profile-img">
+        <div class="profile-info">
+          <p class="nick">João Gabriel ChenferRodrigues de Vicente</p>
+        </div>
+      </div>
+      <p class="bio-text">Estudante do Colégio Rapahel di santo, cursando curso Técnico de TI
+      </p>
+
+
+      
+      <div class="social-buttons">
+        <a href="https://www.linkedin.com/in/jo%C3%A3o-chenfer-69036b367/" class="social-button" target="_blank">
+          <img src="emojis/linkedin.png" alt="Spotify" class="emoji-img">
+        </a>
+        <a href="https://www.instagram.com/jg.chenfer09?igsh=dnMzanZrd3Zjbjc3&utm_source=qr" class="social-button" target="_blank">
+          <img src="emojis/instagram.png" alt="Valorant" class="emoji-img">
+        </a>
+      </div>
+
+
+<!-- 🔥 NOVO RETÂNGULO ADICIONADO ABAIXO 🔥 -->
+<div class="mini-profile-box">
+  <img src="eu.jpg" alt="Foto de Perfil" class="mini-profile-img">
+  <div class="mini-profile-info">
+    <div class="mini-nick-line">
+      <p class="mini-nick">Chenfer</p>
+      <img src="emojis/dev.png" alt="Devil Emoji" class="mini-emoji">
+      <img src="emojis/nitro.png" alt="Globe Emoji" class="mini-emoji">
+    </div>
+    <p class="mini-bio">Meu perfil do linkedin para poder me avaliar melhor :).</p>
+  </div>
+  <!-- Envolvendo o botão com uma tag <a> para redirecionar -->
+  <a href="https://www.linkedin.com/in/jo%C3%A3o-chenfer-69036b367/" target="_blank" class="mini-button-link">
+    <button class="mini-button">Profile</button>
+  </a>
+</div>
+
+<div class="view-counter-box">
+  <img src="emojis/eye.png" class="view-emoji" alt="olho">
+  <span id="view-count">...</span>
+</div>
+
+
+
+<audio id="background-music" loop>
+  <source src="./1 Minute Timer Lofi [hwap5XZ5kSM].mp3" type="audio/mp3">
+  Seu navegador não suporta áudio.
+</audio>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-music');
+
+    const iniciarMusica = () => {
+      audio.play().catch(err => {
+        console.warn('Erro ao tentar tocar o áudio:', err);
+      });
+
+      document.removeEventListener('click', iniciarMusica);
+    };
+
+    document.addEventListener('click', iniciarMusica);
+  });
+</script>
+
+
+
+  <script src="script.js"></script>
+</body>
+</html>
